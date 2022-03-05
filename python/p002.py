@@ -7,6 +7,7 @@ By starting with 1 and 2, the first 10 terms will be:
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
 find the sum of the even-valued terms.
 """
+
 fibonacci_sequence = [1, 2]
 term = 0
 while True:
@@ -17,4 +18,5 @@ while True:
 
 even_valued_terms = [term for term in fibonacci_sequence if term % 2 == 0]
 
-print(sum(even_valued_terms))
+if __name__ == "__main__":
+    print(sum(even_valued_terms))
